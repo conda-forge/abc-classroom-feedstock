@@ -1,5 +1,5 @@
 {% set name = "abc-classroom" %}
-{% set version = "0.0.15" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d4495b34d8e57e0e5cc4fd9ab1d9a703cd7d15b201f40cef0891feffc8672abb
+  sha256: c478f63f1bc70a8148fce0c759b33fcbc1371154817158982e59b8f2a58ce2f4
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -34,7 +34,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.rst
-  summary: 'A package for managing student assignment repos in Github Classroom.'
+  summary: A package for managing student assignment repos in Github Classroom.
 
   description: |
     A set of command line commands that create template repos, push new content 
