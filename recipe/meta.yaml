@@ -1,5 +1,5 @@
 {% set name = "abc-classroom" %}
-{% set version = "0.1.6" %}
+{% set version = "0.1.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e09354911f1ac4577c9c80f40f165bab384fe3d2c22a6c28692e856393fb5b3d
+  sha256: e3c76caa4846f292d471ca52f02c001c9578631b3c563aa6913ffc2f1f9b5def
 
 build:
   noarch: python
