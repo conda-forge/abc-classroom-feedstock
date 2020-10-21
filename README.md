@@ -5,9 +5,13 @@ Home: http://github.com/earthlab/abc-classroom
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/abc-classroom-feedstock/blob/master/LICENSE.txt)
 
 Summary: A package for managing student assignment repos in Github Classroom.
+
+Development: https://github.com/earthlab/abc-classroom
+
+Documentation: http://abc-classroom.readthedocs.io/
 
 A set of command line commands that create template repos, push new content
 to GitHub, collect student assignment repos and returns feedback. This package is maintained
